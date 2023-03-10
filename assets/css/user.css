@@ -111,15 +111,6 @@
     transform: scale(1);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-/* .user-posts{
-    display: flex !important;
-    flex-wrap: wrap;
-    gap: 10px;
-    min-height: 200px;
-    border-top: 1px solid black;
-    position: relative;
-} */
 .big-container{
     margin-top: 10px;
     height: 250px;

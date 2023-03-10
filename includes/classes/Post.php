@@ -113,8 +113,6 @@ class Post{
                 ';
             }
     }
-
-
     public function GetCategoriesNumber($catg){
         $querry = $this->connect()->prepare("select COUNT(post_body) as number from posts group by categorie having categorie = ?");
         $querry->execute([$catg]);
