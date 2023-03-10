@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+.user-container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.top-profile{
+   height: 35%;
+   display: flex;
+   padding: 5px 40px;
+   gap: 50px;
+}
+
+.left-side{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-side{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.user-details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.posts_details{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.user-content{
+    position: relative;
+    min-height: 30vh;
+    background-color: #eaeaea;
+    
+}
+.user-prive{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.suggestions-box{
+    padding: 30px;
+    background-color: #eaeaea;
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+    position: relative;
+    transform: scale(.93);
+    transition: .5s;
+}
+.image-box {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.suggestions-box p{
+    color: #282828;
+}
+.suggestions-box button{
+    display: block;
+    width: 100%;
+}
+.suggestions-box.slick-center{
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* .user-posts{
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 200px;
+    border-top: 1px solid black;
+    position: relative;
+} */
+.big-container{
+    margin-top: 10px;
+    height: 250px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.post-container{
+   
+   position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.face2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #0d6dfdd5;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    transform: translateY(98%);
+    padding: 5px;
+    transition: .5s;
+}
+.big-container:hover .face2{
+    transform: translateY(86%);
+}
+.post-container-text{
+    max-width: 400px;
+    position: relative;
+    max-height: 250px;
+    width: 400px;
+    text-align: justify;
+    padding: 5px;
+    overflow-y: auto;
+    z-index: 10;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.left-post{
+    flex-basis: 40%;
+}
+.left-post > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right-post{
+    flex-basis: 60%;
+    background-color: #eee;
+    color: #282828;
+    text-align: justify;
+    overflow-y: auto;
+    padding:  5px;
+}
+.nopost{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#content{
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+    min-height: 200px;
+    border-top: 2px solid black;
+    position: relative;
+}
+.slick-prev{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 0px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slick-next{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 0px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.lapa{
+    color: #eaeaea !important;
+}

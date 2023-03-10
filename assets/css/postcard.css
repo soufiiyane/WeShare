@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.post_card{
+    width: 100%;
+    background-color:rgb(255, 255, 255) ;
+    padding:  10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin-bottom: 10px;
+}
+.first_section{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.first_section >div{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.first_section img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.first_section p{
+    color: #282828;
+    letter-spacing: 1px;
+}
+.second_section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.second_section p{
+    color: grey;
+    font-size: 15px;
+    text-align: justify;
+}
+.second_section img{
+    width: 100%;
+}
+
+.deletecomment{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: 0;
+    color: #f75a67;
+}
+.editcomment{
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    border: 0;
+    color: #a1a2a4;
+}
+p[contenteditable="true"]{
+    border: #41464b 1px solid;
+    padding: 5px !important;
+    margin-top: 5px !important;
+    outline: none;
+    max-width: 400px;
+}
+p[contenteditable="false"]{
+    color: #282828;
+    letter-spacing: 1px;
+}
